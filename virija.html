@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radha Krishna - A Divine Story</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #f3e5f5, #e3f2fd, #fff8e1);
+            color: #3e2857;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 15px;
+            color: white;
+            background: linear-gradient(135deg, #45216b, #7651a6);
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin: 0 0 12px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #ffffffeb;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px #45216b20;
+        }
+
+        .art {
+            text-align: center;
+            padding: 25px;
+            background: #f3e5f5;
+            border-radius: 15px;
+            font-size: 65px;
+        }
+
+        h2 {
+            color: #7045a0;
+        }
+
+        .story p {
+            font-size: 17px;
+            line-height: 1.9;
+        }
+
+        .quote {
+            padding: 18px;
+            border-left: 5px solid #d4a017;
+            background: #fff8e1;
+            border-radius: 8px;
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        button {
+            background: #7045a0;
+            color: white;
+            padding: 13px 22px;
+            border: none;
+            border-radius: 9px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45216b;
+        }
+
+        #moral {
+            display: none;
+            padding: 15px;
+            margin-top: 18px;
+            border-radius: 10px;
+            background: #e8f5e9;
+            color: #285d36;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #45216b;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            .container {
+                margin: 15px;
+                padding: 18px;
+            }
+
+            .art {
+                font-size: 48px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🦚 Radha Krishna 💙</h1>
+        <p>A Divine Story of Love, Devotion and Faith</p>
+    </header>
+
+    <main class="container">
+
+        <div class="art">
+            🌸 🦚 🪈 🌺
+        </div>
+
+        <section class="story">
+            <h2>The Beginning of a Divine Connection</h2>
+
+            <p>
+                In the beautiful land of Vrindavan, Lord Krishna
+                enchanted everyone with his melodious flute.
+                The forests, rivers and flowers seemed to celebrate
+                whenever his music filled the air.
+            </p>
+
+            <p>
+                Radha was deeply devoted to Krishna. Their stories
+                became a timeless symbol of spiritual love, trust
+                and a connection that goes beyond material things.
+            </p>
+
+            <h2>The Music of Krishna's Flute</h2>
+
+            <p>
+                It is said in traditional stories that Krishna's
+                flute brought peace and joy to the people of
+                Vrindavan. Its sweet music reminded everyone of
+                the beauty of nature and the importance of devotion.
+            </p>
+
+            <p>
+                Radha and Krishna are remembered together in
+                devotional traditions, songs, poetry and festivals.
+                Their story inspires people to cultivate kindness,
+                faith, understanding and selfless love.
+            </p>
+        </section>
+
+        <div class="quote">
+            "Where there is true devotion, there is peace in the heart."
+        </div>
+
+        <section>
+            <h2>The Message of Radha Krishna</h2>
+
+            <p>
+                The stories of Radha and Krishna invite us to look
+                beyond outward appearances and value sincerity,
+                compassion, patience and devotion in our lives.
+            </p>
+
+            <button onclick="showMoral()">
+                Discover the Message ✨
+            </button>
+
+            <div id="moral">
+                <strong>Life Lesson:</strong>
+                True devotion grows through kindness, trust,
+                patience and a loving heart. Let your actions
+                bring peace and happiness to others.
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🙏 Radhe Radhe 🙏</p>
+        <p>May your heart always be filled with love and peace.</p>
+    </footer>
+
+    <script>
+        function showMoral() {
+            const message = document.getElementById("moral");
+
+            if (message.style.display === "block") {
+                message.style.display = "none";
+            } else {
+                message.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
