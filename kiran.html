@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Story of Ravana</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background: linear-gradient(135deg, #160808, #541010, #120707);
+            color: #fff4dc;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 35px 15px;
+            background: #210707;
+            border-bottom: 2px solid #ffae42;
+        }
+
+        h1 {
+            color: #ffb347;
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero {
+            padding: 35px 20px;
+        }
+
+        .hero img {
+            width: 220px;
+            max-width: 90%;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .story {
+            max-width: 750px;
+            margin: 0 auto 30px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid #c98235;
+            border-radius: 16px;
+            line-height: 1.9;
+            text-align: left;
+        }
+
+        h2 {
+            color: #ffbd59;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #ffae42;
+            color: #260909;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        button:hover {
+            background: #fff0c2;
+            transform: scale(1.04);
+        }
+
+        #moreStory {
+            display: none;
+            margin-top: 15px;
+        }
+
+        footer {
+            padding: 20px;
+            color: #d9bfa0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🔥 The Story of Ravana 🔥</h1>
+        <p>The Powerful King of Lanka</p>
+    </header>
+
+    <section class="hero">
+        <h2>Discover the Legend of Ravana</h2>
+
+        <img
+          src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80"
+          alt="Dramatic ancient landscape">
+
+        <p>Explore the story of power, knowledge, pride, and destiny.</p>
+    </section>
+
+    <section class="story">
+        <h2>Who Was Ravana?</h2>
+
+        <p>
+            Ravana was the mighty king of Lanka in the Hindu epic Ramayana.
+            He was known for his intelligence, strength, musical talent,
+            and deep knowledge of ancient scriptures. He was also a great
+            devotee of Lord Shiva.
+        </p>
+
+        <br>
+
+        <h2>The Abduction of Sita</h2>
+
+        <p>
+            According to the Ramayana, Ravana abducted Sita, the wife of
+            Lord Rama, and took her to Lanka. Lord Rama, together with
+            Lakshmana and an army of Vanaras led by Hanuman and Sugriva,
+            travelled to Lanka to rescue her.
+        </p>
+
+        <div id="moreStory">
+            <h2>The Great Battle</h2>
+
+            <p>
+                A great battle took place between Rama's army and Ravana's
+                forces. After a fierce struggle, Rama defeated Ravana and
+                rescued Sita.
+            </p>
+
+            <br>
+
+            <h2>The Lesson of Ravana's Story</h2>
+
+            <p>
+                Ravana's story reminds us that knowledge and power are
+                valuable, but pride and wrongful actions can lead to
+                destruction. In the Ramayana tradition, Rama's victory
+                represents the triumph of dharma over adharma.
+            </p>
+        </div>
+
+        <button onclick="readStory()">Read Full Story</button>
+    </section>
+
+    <footer>
+        <p>✨ An Epic from the Ramayana ✨</p>
+    </footer>
+
+    <script>
+        function readStory() {
+            const story = document.getElementById("moreStory");
+            const button = document.querySelector("button");
+
+            if (story.style.display === "block") {
+                story.style.display = "none";
+                button.textContent = "Read Full Story";
+            } else {
+                story.style.display = "block";
+                button.textContent = "Show Less";
+            }
+        }
+    </script>
+
+</body>
+</html>
